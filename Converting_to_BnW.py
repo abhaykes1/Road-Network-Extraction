@@ -3,6 +3,7 @@ import cv2 as cv
 
 img = cv.imread('Road1.png',0)
 
+#save image
 #cv.imwrite('Original_BnW.png',img)
 
 #display image
