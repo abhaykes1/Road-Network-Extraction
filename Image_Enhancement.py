@@ -15,7 +15,7 @@ image = cv.imread('Original_BnW.png',0)
 
 # non linear transformation,i.e, gamma correction
 
-gamma = 1.5
+gamma = 2
 
 lookUpTable = np.empty((1,256), np.uint8)
 for i in range(256):
