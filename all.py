@@ -16,6 +16,14 @@ for i in range(2):
 #edge detection
 edges = cv.Canny(gaussian3,100,200)
 
+cv.imshow('Original Image', img)
+cv.imshow('New Image', edges)
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+#saving the image
+cv.imwrite('Canny.png',edges)
+
 #plotting
 plt.subplot(121),plt.imshow(img,cmap = 'gray')
 plt.title('Original Image'), plt.xticks([]), plt.yticks([])
